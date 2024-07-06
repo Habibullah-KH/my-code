@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 html{
   background: linear-gradient(315deg, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%);
   background-repeat: no-repeat;
@@ -142,7 +146,7 @@ article{
 
 /** customize the table */
 
-.table{
+#table{
 
   display: flex;
   justify-content: center;
@@ -157,45 +161,45 @@ table {
 }
 
 
-.table table tr td, th{
+#table table tr td, th{
 
   padding: 1.5rem;
 }
 
-.table table tr th{
+#table table tr th{
 
   background-color: #efe9ae;
   color: black;
   
 }
-.table table tr th:nth-child(1){
+#table table tr th:nth-child(1){
 
   border-radius: 1rem 0 0 0;
 }
-.table table tr th:nth-child(5){
+#table table tr th:nth-child(5){
 
   border-radius: 0 1rem 0 0 ;
 }
 
 
-.table table tr td{
+#table table tr td{
 
   background-color: rgba(255, 255, 255, 0.212);
 
 }
 
-.table table tr .me{
+#table table tr .me{
 
   border-radius:0 0 0 1rem;
 }
 
-.table table tr .mee{
+#table table tr .mee{
 
   border-radius:0 0 1rem 0;
 }
 
 
-.form{
+#form{
 
   display: flex;
   justify-content: center;
@@ -204,14 +208,14 @@ table {
   color: black;
 }
 
-.form label{
+#form label{
 
   display: block;
   margin: 1rem;
 
 }
 
-.form input{
+#form input{
 
   padding: 0.6rem;
   border-radius: 0.7rem;
@@ -219,14 +223,14 @@ table {
 
 }
 
-.form legend{
+#form legend{
 
   font-size: x-large;
   font-weight: bold;
 
 }
 
-.form #submit{
+#form #submit{
 
   padding: 0.6rem;
   border-radius: 0 1rem 1rem 0;
@@ -234,7 +238,7 @@ table {
   background-color: white;
 
 }
-.form #submit:hover{
+#form #submit:hover{
 
   background-color: #ff928b;
   color: black;
@@ -259,3 +263,4 @@ footer{
   padding: 5rem;
   text-align: center;
 }
+
